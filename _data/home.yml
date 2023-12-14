@@ -1,10 +1,35 @@
+stats:
+  title: Our Data
+  features:
+      # Hard coded value
+    - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?institutionCode=BBM&country=CA">400,000</span>
+      description: Canadian Specimens
+      href: /specimen/search?country=CA
+      blankTarget: true
+      background: assets/icons/canadian-maple-leaf.svg
+    - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?institutionCode=BBM&hasCoordinate=true">600,000</span>
+      description: Georeferenced Records
+      blankTarget: true
+      href: /specimen/search?view=MAP
+      background: assets/icons/georeferenced-icon.svg
+    - title: 1228
+      description: Total Citations
+      href: /about
+      blankTarget: true
+      background: assets/icons/citations-icon.svg
+    - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?institutionCode=BBM&mediaType=stillImage">37,000</span>
+      description: Records with Images
+      href: /specimen/search?mediaType=StillImage&view=GALLERY
+      background: assets/icons/image-icon.svg
+      blankTarget: true
+
 collectionsPreview:
-  title: Featured collections
+  title: Collections
   description: |
-    Among our two million treasured specimens are the third-largest fish collection in Canada and a myriad of fossils, shells, insects, fungi, mammals, birds, reptiles, amphibians, and plants from around BC and across the world. 
+    Among our two million treasured specimens are the third-largest fish collection in Canada and a myriad of fossils, shells, insects, fungi, mammals, birds, reptiles, amphibians, and plants from around BC and across the world. If you would like to go to a particular dataset (such as Birds, Lichen, or Mammals) click on the red button below instead.
   cta:
-  - text: View all collections
-    href: /collection/search
+  - text: View Individual Datasets
+    href: /datasets
     isPrimary: true
   features: 
   - title: Spencer Entomology Collection
@@ -15,54 +40,7 @@ collectionsPreview:
     description: The Cowan Tetrapod Collection was founded in 1943, but the oldest specimen dates from 1849. With over 40,000 specimens representing over 2,500 species, the collection is the second-largest scientific collection of birds, mammals, reptiles, and amphibians in British Columbia.
     background: assets/images/ctc-card-image.jpg
     href: /collection/3b2ad644-b3e4-4ac9-a57f-23be3f86ed0e
-  - title: Fish
-    description: The fish collection holds over 800,000 specimens and over 50,000 DNA and tissue samples, making it the third largest fish collection in Canada. The collection holds 11 holotype specimens, original specimens that were used to describe new species. It also contains representatives of what may be the youngest fish species on Earth, pairs of stickleback species that evolved only recently in British Columbia's lakes.
-    background: assets/images/fish-card-image.jpg
-    href: /collection/5aee131f-91dd-4b78-bfee-296f86801b7f
-
-
-polarBear:
-  reverse: false
-  title: The Herbarium
-  description: |      # required
-    The University of British Columbia Herbarium is the largest in western Canada and is home to over half a million plant specimens from around the world. This collection is critical to the identification, monitoring, and conservation of plant biodiversity in British Columbia, and is an important resource for scientific research and education.
-  # img required
-  background: assets/images/herbarium-card-image.jpg
-  imageLicense: |
-    [*Masonhalea richardsonii*, 2001](https://beaty-biodiversity-museum.hp.gbif-staging.org/specimen/search?entity=3311896307) Collected by Curtis Bjork, Lichenologist and Botanist at UBC
-  cta:
-  - text: See all specimens
-    href: /under_development
-
-
-specimens:
-  title: Selected specimens
-  klass: specimens
-  description: |
-    Take a peek
-  features: 
-  - title: Green peafowl <em>Pavo muticus</em>
-    description: 
-    background: assets/images/feature-specimen-1.jpg
-  - title: Giant Pacific octopus <em>Enteroctopus doleini</em>
-    description: 
-    background: assets/images/feature-specimen-2.jpg
-  - title: Saskatoon serviceberry <em>Amelanchier alnifolia</em>
-    description: 
-    background: assets/images/feature-specimen-3.jpg
-stats:
-  title: Our Data
-  features:
-      # Hard coded value
-    - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?publishingOrg=b542788f-0dc2-4a2b-b652-fceced449591&country=CA">100,000</span>
-      description: Canadian Specimens
-      href: /specimen/search?country=CA
-      blankTarget: true
-    - title: <span data-ajax-url="https://api.gbif.org/v1/literature/search?publishingOrganizationKey=b542788f-0dc2-4a2b-b652-fceced449591">100,000</span>
-      description: Total Citations
-      href: /about
-      blankTarget: true
-    - title: 37000
-      description: High Quality Images
-      href: /about
-      blankTarget: true
+  - title: UBC Herbarium
+    description: The University of British Columbia Herbarium is the largest in western Canada and is home to over half a million plant specimens from around the world. This collection is critical to the identification, monitoring, and conservation of plant biodiversity in British Columbia, and is an important resource for scientific research and education.
+    background: assets/images/herbarium-card-image.jpg
+    href: /collection/b44fcb7f-1227-4fa3-8ed2-de27aabb06e0

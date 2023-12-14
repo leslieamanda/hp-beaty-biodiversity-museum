@@ -3,10 +3,12 @@
 - text: About
   href: /about
 - text: Collections
-  href: /collection/search
+  href: /collections
+- text: Datasets
+  href: /datasets
 - text: Specimens
   href: /specimen/search
 - text: 100 Treasures
   href: /100-treasures
 - text: Contact us
-  href: /contact-us
+  href: https://beatymuseum.ubc.ca/connect/contact/
